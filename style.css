@@ -1,0 +1,283 @@
+body {
+    font-family: 'Avenir', 'Raleway', 'Helvetica', 'sans-serif';
+    font-weight: 100;
+    height: 100vh;
+}
+
+.fullpage {
+    height: 100vh;
+}
+
+/* ============ main page ============ */
+#logo {
+    width: 16%;
+    display: block;
+    margin: auto;
+    padding-top: 12%;
+}
+
+#bodytext {
+    width: 44%;
+    text-align: justify;
+    text-align-last: center;
+    padding-top: 3%;
+}
+
+p {
+    padding-bottom: 2%;
+}
+
+#options {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    padding-top: 3%;
+    text-align: center;
+}
+
+#options a, #options a:hover, #options a:active {
+    color: #000;
+    text-decoration: none;
+}
+
+.purchase {
+    display: inline-block;
+    margin-bottom: 2%;
+    width: 190px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 0.1% 0 0 0.1%;
+}
+
+.loginlink {
+    display: inline-block;
+    width: 212px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 0.2% 0 0 0.1%
+}
+
+/* ============ login ============ */
+
+.register {
+    display: inline-block;
+    width: 222px;
+    padding: 0.1% 18px 0.1% 0;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    margin: 1.5% 2% 0 0;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid black;
+    border-radius: 15px; 
+}
+
+#register{
+    color: #000;
+    text-decoration: none;
+}
+
+.store {
+    display: inline-block;
+    width: 40%;
+    margin: 1.5% 0 0 2%;
+    font-size: 18px;
+}
+
+#store {
+    color: #000;
+    text-decoration: none;
+}
+
+#icon {
+    width: 8%;
+    display: block;
+    margin: auto;
+    padding-top: 10.5%;
+}
+
+form {
+    margin-top: 10%;
+}
+
+.input {
+    border-bottom: 1px solid black;
+    padding-top: 1%;
+    margin-bottom: 9%;
+    height: 40px;
+    width: 100%;
+    color: #adadad;
+}
+
+input[type="text"] {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 20px;
+    float: left;
+    background-color: transparent;
+    z-index: 2;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+}
+
+input[type="password"] {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    padding: 20px;
+    background-color: transparent;
+    z-index: 2;
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    color: #adadad;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+#login {
+    width: 82px;
+    padding: 0.1% 0% 0.1% 0%;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin-top: 2%;  
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+.password {
+    font-size: 12px;
+    color: #adadad;
+    text-decoration: none;
+}
+
+#password {
+    padding-top: 4%;
+}
+
+/* ============ store ============ */
+
+#store-logo {
+    width: 16%;
+    display: block;
+    margin: auto;
+    padding-top: 5%;
+}
+
+#title {
+    font-family: 'Futura';
+    font-weight: 100;
+}
+
+#listing {
+    display: block;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    margin-right: 29%;
+    padding-top: 7%;
+}
+
+.quantity {
+    overflow: hidden;
+    background: url("img/arrow.png");
+    background-size: 10%;
+    background-position: 92% 50%;
+    background-repeat: no-repeat;
+}
+
+select {
+    border: 1px solid black;
+    background:transparent;
+    width: 100%;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    padding-left: 7%;
+    outline: none;
+}
+
+.cart {
+    font-size: 14px;
+    position: absolute;
+    width: 100%;
+    margin: -17% 0 0 95%;
+}
+
+.cart a {
+    color: #000 !important;
+    text-decoration: none !important;
+}
+
+.listing-text {
+    font-size: 14px;
+    position: absolute;
+    width: 150%;
+    margin-top: 35%;
+}
+
+/* ============ register ============ */
+
+#register-icon {
+    position: absolute;
+    margin-left: 17%;
+    width: 25%;
+    margin-top: 15%;
+}
+
+#register-input {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    margin-left: 40%;
+    padding-top: 4.5%;
+}
+
+#registerbtn {
+    width: 92px;
+    padding: 0.1% 0% 0.1% 0.4%;
+    color: #000;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin-top: 2%;  
+    border: 1px solid black;
+    border-radius: 14px;
+}
+
+/* ============ footer ============ */
+
+.navbar-fixed-bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5%;
+    background: #fff;
+    font-size: 14px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    display: block;
+}
+
+li {
+    display: inline;
+    color: #adadad;
+    margin-left: 4%;
+}
+
+footer a {
+    color: #adadad !important;
+    text-decoration: none !important;
+}
