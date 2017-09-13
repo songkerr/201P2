@@ -476,6 +476,7 @@ select {
     padding: 2%;
     outline: none;
 }
+
 .arialtext{
     font-family: 'Arial';
 
@@ -490,11 +491,11 @@ select {
 }
 
 .bold {
-    font-style: bold;
+    font-weight: 800;
 }
 
 .boldItalic {
-    font-weight: 500;
+    font-weight: 800;
     font-style: italic;
 }
 

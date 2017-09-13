@@ -20,12 +20,12 @@ var selectFont = 'Default';
 
 $('#fonts').change(function () {
     $('span').removeClass(selectFont).addClass($(this).val());
-    selectedScheme = $(this).val();
+    selectFont = $(this).val();
 });
 
 var selectStyle = 'Default';
 
 $('#styles').change(function () {
     $('span').removeClass(selectStyle).addClass($(this).val());
-    selectedScheme = $(this).val();
+    selectStyle= $(this).val();
 });
