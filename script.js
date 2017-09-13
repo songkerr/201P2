@@ -16,12 +16,16 @@ $(document).ready(function () {
     
 });
 
-//font change
-var elem = document.getElementById("fonts");
+var selectFont = 'Default';
 
-elem.onchange = function () {
-    var hiddenDiv = document.getElementById("times");
-    hiddenDiv.style.display = "block";
-    document.getElementById('arial').style.display = "none";
-};
+$('#fonts').change(function () {
+    $('span').removeClass(selectFont).addClass($(this).val());
+    selectedScheme = $(this).val();
+});
 
+var selectStyle = 'Default';
+
+$('#styles').change(function () {
+    $('span').removeClass(selectStyle).addClass($(this).val());
+    selectedScheme = $(this).val();
+});

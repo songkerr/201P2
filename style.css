@@ -84,7 +84,7 @@ div.hidden {
     width: 44%;
     text-align: justify;
     text-align-last: center;
-    padding-top: 3%;
+    padding-top: 4%;
 }
 
 p {
@@ -106,11 +106,11 @@ p {
 
 .purchase {
     display: inline-block;
-    margin-bottom: 2%;
+    margin-bottom: 1.5%;
     width: 190px;
     border: 1px solid #adadad;
     border-radius: 11px;
-    padding: 0.1% 0 0 0.1%;
+    padding: 0 0 0 0.1%;
 }
 
 .purchase:hover {
@@ -122,7 +122,7 @@ p {
     width: 212px;
     border: 1px solid #adadad;
     border-radius: 12px;
-    padding: 0.2% 0 0 0.1%;
+    padding: 0 0 0 0.1%;
 }
 
 .loginlink:hover {
@@ -134,7 +134,7 @@ p {
 .register {
     display: inline-block;
     width: 222px;
-    padding: 0.1% 20px 0.1% 0;
+    padding: 0 20px 0 0;
     position: absolute;
     right: 0px;
     text-align: right;
@@ -227,7 +227,6 @@ input:focus {
 
 #login {
     width: 82px;
-    padding: 0.1% 0% 0.1% 0%;
     color: #000;
     font-size: 18px;
     text-decoration: none;
@@ -373,24 +372,25 @@ select {
 .logout1 {
     display: inline-block;
     width: 82px;
-    padding-right: 16.2px;
+    padding-right: 14px;
     position: absolute;
     right: 0px;
     text-align: right;
-    margin: -9% 3% 0 0;
+    margin: -11.5% 3% 0 0;
     border: 1px solid #adadad;
     border-radius: 15px; 
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #pageicon {
     width: 8%;
     display: block;
     margin: auto;
-    padding-top: 6.5%;
+    padding-top: 8.5%;
 }
 
 #select-text {
+    font-size: 18px;
     width: 40%;
     text-align: justify;
     text-align-last: center;
@@ -411,7 +411,7 @@ select {
     border-radius: 15px;
     padding: 0% 0 0.1% 0.2%;
     font-size: 18px;
-    margin-top: 2%;
+    margin-top: 1.4%;
 }
 
 .type:hover {
@@ -439,7 +439,7 @@ select {
     padding: 0;
     justify-content: center;
     display: flex;
-    margin-top: 31%
+    margin-top: 28%
 }
 
 .logout {
@@ -464,7 +464,7 @@ select {
     text-decoration: none;
 }
 
-.scroll {
+.scroll, .scroll:focus{
     position: absolute;
     width: 46%;
     height: 55%;
@@ -474,16 +474,28 @@ select {
     text-align: justify;
     border: 1px solid #fff;
     padding: 2%;
+    outline: none;
 }
-
-#arial {
+.arialtext{
     font-family: 'Arial';
-}
 
-#times {
-    display: none;
+}
+.timestext{
     font-family: 'Times New Roman';
     font-size: 14.6px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-style: bold;
+}
+
+.boldItalic {
+    font-weight: 500;
+    font-style: italic;
 }
 
 div::-webkit-scrollbar {
