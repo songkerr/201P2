@@ -7,46 +7,34 @@
     </head>
     
 <body>
+    <div class="hidden">
     <section class="fullpage">
-        <div class="hidden">
-            <a href="index.html">
-                <img src="img/icon.png" id="register-icon">
-            </a>
+            <img src="img/icon.png" id="pageicon">
+        <div class="logout1">
+            <a id="logout" href="login.html">logout</a>
         </div>
+        <section class="container-fluid" id="select-text">
+            <p>Select the pages you would like typed up.</p>
+        </section>
         <div align="center">
             <div class="col-md-6 col-xl-7">
-                <form action="#" id="register-input">
+                <form action="#" id="pageselect">
                     <div class="row">
                         <div class="col-md-6 col-xl-7">
                             <div class="input">
-                                <input type="text" placeholder="Typebook ID">
+                                <input type="text" placeholder="from">
                             </div>
                         </div>
                         <div class="col-md-6 col-xl-7">
                             <div class="input">
-                                <input type="text" placeholder="first name">
+                                <input type="text" placeholder="to">
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-7">
-                            <div class="input">
-                                <input type="text" placeholder="last name">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-7">
-                            <div class="input">
-                                <input type="text" placeholder="email">
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-7">
-                            <div class="input">
-                                <input type="text" placeholder="password">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="registerbtn">
-                        <a id="registerbtn" href="page.html">register</a>
                     </div>
                 </form>
+                <div class="type">
+                    <a id="type" href="type.html">type</a>
+                </div>
             </div>
         </div>
 
@@ -71,6 +59,7 @@
         </footer>
     <!-- ====== footer ====== -->
     </section>
+    </div>
     
     <script src="jquery-3.1.1.js"></script>
     <script type="text/javascript" src="script.js"></script>

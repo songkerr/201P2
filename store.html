@@ -2,22 +2,48 @@
 <html>
     <head>
         <title>Typebook</title>
-        <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="bootstrap.css">  
     </head>
     
 <body>
+    <div class="hidden">
     <section class="fullpage">
         <a href="index.html">
             <img src="img/logo.png" id="store-logo">
         </a>
+        
+        <div class="container-fluid">        
+            <div class="carousel slide" id="myCarousel">
+                <div class="carousel-inner">
+                    <div class="item active"> <!-- new Slide -->
+                            <div onClick="stop()">
+                            <a href="#"><img src="img/notebook.jpg" alt=""></a>
+                            </div>                                                      
+                    </div> 
+                    <div class="item"> <!-- new Slide -->          
+                        <div class="bannerImage">
+                            <a href="#"><img src="img/arrow.png" alt=""></a>
+                        </div>                                                         
+                    </div>             
+                    <div class="item"> <!-- new Slide -->
+                        <div class="bannerImage">
+                            <a href="#"><img src="img/1/Scene1_11%20copy.jpg" alt=""></a>
+                        </div>                                           
+
+                <div class="control-box">                            
+                    <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+                    <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+                </div>                
+            </div>
+        </div>
+        
         <div class="listing">          
             <section class="container-fluid" id="listing">
                 <p id="title">A5 Typebook</p>
                 <p>$80</p>
                 <div class="quantity">
-                    <select id="qty">
+                    <select>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -42,7 +68,7 @@
                 <a href="#">Add to cart</a>
                 </section>
             </section>
-
+        </div>
     <!-- ====== footer ====== -->
         <footer>
             <div class="navbar-fixed-bottom">
@@ -61,9 +87,8 @@
         </footer>
     <!-- ====== end footer ====== -->
     </section>
+    </div>
     
-
-    <script type="text/javascript" src="smoothscroll.js"></script>
     <script src="jquery-3.1.1.js"></script>
     <script type="text/javascript" src="script.js"></script>
 

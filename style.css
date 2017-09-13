@@ -4,11 +4,75 @@ body {
     height: 100vh;
 }
 
-.fullpage {
-    height: 100vh;
+div.hidden {
+    display: none;
 }
 
-/* ============ main page ============ */
+/* ======================== preloader ======================== */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.pre-container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+/* ======================== main page ======================== */
+
+div.hidden {
+    display: none;
+}
+
 #logo {
     width: 16%;
     display: block;
@@ -44,33 +108,45 @@ p {
     display: inline-block;
     margin-bottom: 2%;
     width: 190px;
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px solid #adadad;
+    border-radius: 11px;
     padding: 0.1% 0 0 0.1%;
+}
+
+.purchase:hover {
+    border: 1px solid black;
 }
 
 .loginlink {
     display: inline-block;
     width: 212px;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 0.2% 0 0 0.1%
+    border: 1px solid #adadad;
+    border-radius: 12px;
+    padding: 0.2% 0 0 0.1%;
 }
 
-/* ============ login ============ */
+.loginlink:hover {
+    border: 1px solid black;
+}
+
+/* ======================== login ======================== */
 
 .register {
     display: inline-block;
     width: 222px;
-    padding: 0.1% 18px 0.1% 0;
+    padding: 0.1% 20px 0.1% 0;
     position: absolute;
     right: 0px;
     text-align: right;
     margin: 1.5% 2% 0 0;
     font-size: 18px;
     color: #000;
-    border: 1px solid black;
+    border: 1px solid #adadad;
     border-radius: 15px; 
+}
+
+.register:hover {
+    border: 1px solid black;
 }
 
 #register{
@@ -91,10 +167,15 @@ p {
 }
 
 #icon {
-    width: 8%;
-    display: block;
+    width: 100%;
     margin: auto;
-    padding-top: 10.5%;
+    margin-top: 95%;
+}
+
+#back {
+    width: 8%;
+    margin: auto;
+    display: block;
 }
 
 form {
@@ -152,8 +233,12 @@ input:focus {
     text-decoration: none;
     display: block;
     margin-top: 2%;  
-    border: 1px solid black;
+    border: 1px solid #adadad;
     border-radius: 14px;
+}
+
+#login:hover {
+    border: 1px solid black;
 }
 
 .password {
@@ -162,11 +247,16 @@ input:focus {
     text-decoration: none;
 }
 
+.password:link, .password:hover, .password:active, .password:visited {
+    color: #adadad;
+    text-decoration: none;
+}
+
 #password {
     padding-top: 4%;
 }
 
-/* ============ store ============ */
+/* ======================== store ======================== */
 
 #store-logo {
     width: 16%;
@@ -174,6 +264,25 @@ input:focus {
     margin: auto;
     padding-top: 5%;
 }
+
+.carousel .item{
+    width: 50%;
+}
+.carousel .item img{
+    margin: 0 auto; /* Align slide image horizontally center */
+    width: 100%;
+}
+
+.carousel-control.left, 
+.carousel-control.right {
+    display: inline-block;
+    position: absolute;
+    top: 48%;
+	border: 1px solid black;
+}
+
+.carousel-control.left {color: black;}
+.carousel-control.right {color: black;}
 
 #title {
     font-family: 'Futura';
@@ -222,11 +331,11 @@ select {
 .listing-text {
     font-size: 14px;
     position: absolute;
-    width: 150%;
+    width: 175%;
     margin-top: 35%;
 }
 
-/* ============ register ============ */
+/* ======================== register ======================== */
 
 #register-icon {
     position: absolute;
@@ -251,15 +360,231 @@ select {
     text-decoration: none;
     display: block;
     margin-top: 2%;  
-    border: 1px solid black;
+    border: 1px solid #adadad;
     border-radius: 14px;
 }
 
-/* ============ footer ============ */
+#registerbtn:hover { 
+    border: 1px solid black;
+}
+
+/* ======================= page select ======================== */
+
+.logout1 {
+    display: inline-block;
+    width: 82px;
+    padding-right: 16.2px;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    margin: -9% 3% 0 0;
+    border: 1px solid #adadad;
+    border-radius: 15px; 
+    font-size: 16px;
+}
+
+#pageicon {
+    width: 8%;
+    display: block;
+    margin: auto;
+    padding-top: 6.5%;
+}
+
+#select-text {
+    width: 40%;
+    text-align: justify;
+    text-align-last: center;
+    margin-top: 4%;
+    padding-bottom: 4%;
+}
+
+#pageselect {
+    width: 64%;
+    margin-top: -0.1%;
+    padding-bottom: 7.5%;
+}
+
+.type {
+    display: inline-block;
+    width: 72px;
+    border: 1px solid #adadad;
+    border-radius: 15px;
+    padding: 0% 0 0.1% 0.2%;
+    font-size: 18px;
+    margin-top: 2%;
+}
+
+.type:hover {
+    border: 1px solid black;
+}
+
+.type a, .type a:hover, .type a:active, .type a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* ======================== typed pages ======================== */
+
+#preloader2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+.load-text {
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    margin-top: 31%
+}
+
+.logout {
+    display: inline-block;
+    width: 82px;
+    padding-right: 16.2px;
+    position: absolute;
+    right: 0px;
+    text-align: right;
+    margin: -7% 3% 0 0;
+    border: 1px solid #adadad;
+    border-radius: 15px; 
+    font-size: 16px;
+}
+
+.logout:hover, .logout1:hover {
+    border: 1px solid black;
+}
+
+#logout {
+    color: #000;
+    text-decoration: none;
+}
+
+.scroll {
+    position: absolute;
+    width: 46%;
+    height: 55%;
+    overflow: auto;
+    display: block;
+    margin: 4% 0 0 14%;
+    text-align: justify;
+    border: 1px solid #fff;
+    padding: 2%;
+}
+
+#arial {
+    font-family: 'Arial';
+}
+
+#times {
+    display: none;
+    font-family: 'Times New Roman';
+    font-size: 14.6px;
+}
+
+div::-webkit-scrollbar {
+    width: 7px;
+}
+
+div::-webkit-scrollbar-thumb {
+    background: #000;  
+    border-radius: 20px;
+}
+
+#page-arrow {
+    display: block;
+    position: absolute;
+    left: 0;
+    margin: 4.1% 0 0 64.8%;
+    padding: 0;
+}
+
+#page-select, #page-select:hover {
+    position: absolute;
+    left: 0;
+    margin: 4% 0 0 66%;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+#page-nav {
+    position: absolute;
+    left: 0;
+    margin: 8% 0 0 66%;
+    width: 160px;
+    font-size: 16px;
+}
+
+.number, .number:hover {
+    margin-left: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+#p, #p:hover {
+    margin-left: -7.7px;
+    padding: 0 14px 0 0;
+    color: #000;
+    text-decoration: none;
+}
+
+.text-styles {
+    width: 192px;
+    overflow: hidden;
+    display: block;
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    margin: 7% 0 0 66%;
+}
+
+#fonts {
+    -webkit-border-radius: 20px; 
+    background: url("img/arrow.png");
+    background-size: 5.5%;
+    background-position: 92% 50%;
+    background-repeat: no-repeat;
+}
+
+#styles {
+    width: 128px;
+    margin-top: 10px;
+    -webkit-border-radius: 20px; 
+    background: url("img/arrow.png");
+    background-size: 8.5%;
+    background-position: 88% 50%;
+    background-repeat: no-repeat;
+}
+
+#pt {
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 0;
+    height: 23px;
+    margin-top: 10px;
+}
+
+input#pt-input {
+    width: 80%;
+    padding: 2px 0 0 14px;
+    background-color: transparent;
+    z-index: 2;
+    font-size: 18px;
+    color: #000000;
+    text-align: left;
+    font-size: 16px;
+}
+ 
+/* ======================== footer ======================== */
 
 .navbar-fixed-bottom {
-    display: flex;
-    justify-content: center;
     padding-bottom: 1.5%;
     background: #fff;
     font-size: 14px;
@@ -269,12 +594,14 @@ ul{
     list-style-type: none;
     padding: 0;
     display: block;
+    width: 100%;
+    text-align: center;
 }
 
 li {
     display: inline;
     color: #adadad;
-    margin-left: 4%;
+    margin: 0 2% 0 2%;
 }
 
 footer a {
