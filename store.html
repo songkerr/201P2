@@ -9,36 +9,33 @@
 <body>
     <div class="hidden">
     <section class="fullpage">
-        <a href="index.html">
+        <a href="index.html" id="store-back">
             <img src="img/logo.png" id="store-logo">
         </a>
         
-        <div class="container-fluid">        
-            <div class="carousel slide" id="myCarousel">
-                <div class="carousel-inner">
-                    <div class="item active"> <!-- new Slide -->
-                            <div onClick="stop()">
+    <div class="carousel slide" id="myCarousel">
+        <div class="carousel-inner">
+            <div class="item active"> <!-- new Slide -->
+                <div class="bannerImage">
+                    <div>
+                        <div onClick="stop()">
                             <a href="#"><img src="img/notebook.jpg" alt=""></a>
-                            </div>                                                      
-                    </div> 
-                    <div class="item"> <!-- new Slide -->          
-                        <div class="bannerImage">
-                            <a href="#"><img src="img/arrow.png" alt=""></a>
-                        </div>                                                         
-                    </div>             
-                    <div class="item"> <!-- new Slide -->
-                        <div class="bannerImage">
-                            <a href="#"><img src="img/1/Scene1_11%20copy.jpg" alt=""></a>
-                        </div>                                           
-
-                <div class="control-box">                            
-                    <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
-                    <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
-                </div>                
+                        </div>
+                    </div>
+                </div>                                                        
+            </div> 
+            <div class="item"> <!-- new Slide -->          
+                <div class="bannerImage">
+                    <a href="#"><img src="img/notebook-open.jpg" alt=""></a>
+                </div>                                                         
             </div>
         </div>
-        
-        <div class="listing">          
+        <div class="control-box">                            
+            <a data-slide="prev" href="#myCarousel" class="carousel-control left">‹</a>
+            <a data-slide="next" href="#myCarousel" class="carousel-control right">›</a>
+        </div> 
+    </div>
+
             <section class="container-fluid" id="listing">
                 <p id="title">A5 Typebook</p>
                 <p>$80</p>
@@ -68,7 +65,6 @@
                 <a href="#">Add to cart</a>
                 </section>
             </section>
-        </div>
     <!-- ====== footer ====== -->
         <footer>
             <div class="navbar-fixed-bottom">
@@ -91,6 +87,7 @@
     
     <script src="jquery-3.1.1.js"></script>
     <script type="text/javascript" src="script.js"></script>
+    <script src="bootstrap.js"></script>
 
 </body>
 

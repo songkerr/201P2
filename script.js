@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    $('div.hidden').fadeIn(1500).removeClass('hidden');
     
+    $('div.hidden').fadeIn(1500).removeClass('hidden');
     //index preloader
     $('#status').fadeOut();
     $('#preloader').delay(1200).fadeOut('slow');
@@ -8,10 +8,16 @@ $(document).ready(function () {
         'overflow': 'visible'
     });
     
+    $('div.hidden1').fadeIn(3800).removeClass('hidden');
     //type preloader
-    $('#preloader2').delay(800).fadeOut('slow');
+    $('#preloader2').delay(3500).fadeOut('slow');
     $('body').delay(550).css({
         'overflow': 'visible'
+    });
+    
+    $('.carousel').carousel({
+        pause: true,
+        interval: false
     });
     
 });
@@ -27,5 +33,5 @@ var selectStyle = 'Default';
 
 $('#styles').change(function () {
     $('span').removeClass(selectStyle).addClass($(this).val());
-    selectStyle= $(this).val();
+    selectStyle = $(this).val();
 });
