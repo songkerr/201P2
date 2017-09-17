@@ -270,7 +270,7 @@ input:focus {
 #myCarousel {
     position: absolute;
     width: 33%;
-    margin: 7.5% 0 0 16%;
+    margin: 7% 0 0 18.5%;
 }
 
 .item img {
@@ -305,7 +305,7 @@ input:focus {
     font-size: 18px;
     position: absolute;
     right: 0;
-    margin-right: 29%;
+    margin-right: 32%;
     padding-top: 7%;
 }
 
